@@ -335,9 +335,6 @@ body {
   font-size: 12px;
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
-  font-size: 12px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.01em;
 }
 
 .modal-button {
@@ -411,19 +408,47 @@ body {
 
 .checkbox-text {
   margin-left: 9px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+@media screen and (min-width: 768px) {
+  .checkbox-text {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
+}
 
 .checkbox-ok {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .checkbox-ok {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-ok {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo__web,

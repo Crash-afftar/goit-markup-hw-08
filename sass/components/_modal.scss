@@ -138,9 +138,6 @@
 .modal-comment {
   margin-bottom: 20px;
   @include font(null, 12px, calc(14 / 12), 0.01em);
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
 }
 
 .modal-button {
@@ -210,11 +207,23 @@
 
 .checkbox-text {
   margin-left: 9px;
-  @include font(null, 14px, 1.71, 0.03em);
+  @include font(null, 12px, calc(14 / 12), 0.03em);
   color: var(--primary-text-color);
+  @include tablet {
+    @include font(null, 12px, calc(14 / 12), 0.03em);
+  }
+  @include desktop {
+    @include font(null, 14px, 1.71, 0.03em);
+  }
 }
 .checkbox-ok {
-  @include font(null, 14px, 1.71, 0.03em);
+  @include font(null, 12px, calc(14 / 12), 0.03em);
   text-decoration-line: underline;
   color: var(--accent-color);
+  @include tablet {
+    @include font(null, 12px, calc(14 / 12), 0.03em);
+  }
+  @include desktop {
+    @include font(null, 14px, 1.71, 0.03em);
+  }
 }
