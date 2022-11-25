@@ -1,0 +1,55 @@
+.features {
+  padding: 60px 0;
+  @include desktop {
+    padding: var(--us-distance) 0;
+  }
+}
+.features__item {
+  list-style: none;
+  height: 248px;
+  @include calculation(1, 30px);
+  @include tablet {
+    @include calculation(2, 30px);
+  }
+  @include desktop {
+    @include calculation(4, 30px);
+  }
+}
+
+.features__list {
+  display: flex;
+  flex-wrap: wrap;
+  @include tablet {
+    gap: 30px;
+  }
+  @include desktop {
+    gap: 30px;
+  }
+}
+
+.features__tittle {
+  @include font(700, 14px, calc(16 / 14), 0.03em);
+  text-transform: uppercase;
+  color: var(--black-color);
+  margin-bottom: 10px;
+  text-align: center;
+  @include tablet {
+    text-align: left;
+  }
+  @include desktop {
+    text-align: left;
+  }
+}
+.features__list-container {
+  display: flex;
+  background-color: var(--background-our-team);
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.features__text {
+  @include font(null, 14px, calc(24 / 14), 0.03em);
+  color: var(--primary-text-color);
+}

@@ -1,0 +1,82 @@
+.example-name {
+  margin-bottom: 4px;
+  @include font(700, 18px, 2, 0.06em);
+  color: var(--black-color);
+}
+.example-descr {
+  @include font(null, 16px, calc(30 / 16), 0.03em);
+  color: var(--primary-text-color);
+}
+.examle-item {
+  background-color: #eeeeee;
+}
+.example {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  @include tablet {
+    gap: 30px;
+  }
+  @include desktop {
+    gap: 30px;
+  }
+}
+
+.example-item {
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+.example-link {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  transition-property: box-shadow;
+  transition-duration: var(--transition-root-duration);
+  transition-timing-function: var(--transition-root-timing);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.example-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+.example-top-text {
+  position: absolute;
+  top: 0;
+  padding: 77px 24px;
+  @include font(400, 18px, 1.56, 0.03em);
+  color: var(--white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: var(--transition-root-duration);
+  transition-timing-function: var(--transition-root-timing);
+  overflow: auto;
+  .example-item:hover & {
+    transform: translateY(0);
+  }
+  @include tablet {
+    padding-top: 49px;
+    padding-bottom: 77px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include desktop {
+    padding: 63px 24px;
+  }
+}
+
+.example-text {
+  padding: 20px 24px;
+  border: 1px solid rgba(238, 238, 238, 1);
+  border-top: none;
+}

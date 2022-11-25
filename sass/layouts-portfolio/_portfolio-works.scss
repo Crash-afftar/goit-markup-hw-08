@@ -1,0 +1,43 @@
+.our-works-section {
+  padding: var(--us-distance) 0px;
+}
+
+.our-works-button {
+  font-family: inherit;
+  text-align: center;
+  @include font(500, 16px, calc(26 / 16), 0.03em);
+  color: var(--secondary-text-color);
+  border: none;
+  height: 38px;
+  left: 593px;
+  top: 174px;
+  background: var(--background-our-team);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 6px 22px;
+  transition-property: background, fill;
+  transition-duration: var(--transition-root-duration);
+  transition-timing-function: var(--transition-root-timing);
+  &:hover,
+  &:focus {
+    height: 38px;
+    left: 593px;
+    top: 174px;
+    color: var(--portfolio-works);
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+}
+
+.our-works {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 575px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}

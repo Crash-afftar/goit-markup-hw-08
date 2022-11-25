@@ -1,0 +1,47 @@
+.logo__web,
+.logo__studio {
+  text-decoration: none;
+  font-family: "Raleway";
+  font-style: normal;
+  @include font(700, 26px, calc(31 / 26), 0.03em);
+}
+.logo__web {
+  color: var(--accent-color);
+}
+.navigation__logo {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+.logo__studio {
+  color: var(--black-color);
+}
+
+.logo__studio--footer {
+  color: var(--white-color);
+}
+.footer__logo {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 20px;
+  @include tablet {
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  @include desktop {
+    display: flex;
+    text-align: left;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+}

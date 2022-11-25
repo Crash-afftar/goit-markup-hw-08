@@ -1,0 +1,56 @@
+.team {
+  padding: 60px 0;
+  @include desktop {
+    padding: var(--us-distance) 0;
+  }
+}
+.section.team {
+  background-color: var(--background-our-team);
+}
+
+.section.team p,
+.section.team h3 {
+  text-align: center;
+  @include font(null, 16px, calc(19 / 16), 0.03em);
+}
+.section.team h3 {
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+.section.team p {
+  color: var(--primary-text-color);
+  margin-bottom: 16px;
+}
+.section.team li {
+  background-color: var(--white-color);
+}
+
+.our-team {
+  margin-bottom: 50px;
+}
+.our-team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 100%;
+  @include tablet {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+.our-team-personal {
+  padding: 30px;
+}
+.our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  @include tablet {
+    gap: 30px;
+  }
+  @include desktop {
+    gap: 30px;
+  }
+}

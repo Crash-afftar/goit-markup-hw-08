@@ -1,0 +1,69 @@
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.link {
+  color: var(--secondary-text-color);
+}
+
+%transition {
+  transition-duration: var(--transition-root-duration);
+  transition-timing-function: var(--transition-root-timing);
+}
+%transform {
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+@mixin font($weight, $size, $height, $spacing) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+}
+
+@mixin calculation($count, $gap) {
+  width: calc((100% - $gap * ($count - 1)) / $count);
+}
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

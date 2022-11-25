@@ -1,0 +1,75 @@
+.hero {
+  background-color: var(--background-hero-footer);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: var(--hero-gradient),
+    url(../images/hero-bg/hero-bg-mobile.jpg);
+  @include retina {
+    background-image: var(--hero-gradient),
+      url(../images/hero-bg/hero-bg-mobile-2x.jpg);
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 480px;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    background-image: var(--hero-gradient),
+      url(../images/hero-bg/hero-bg-tablet.jpg);
+    min-width: 481px;
+    max-width: 768px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    @include retina {
+      background-image: var(--hero-gradient),
+        url(../images/hero-bg/hero-bg-tablet-2x.jpg);
+    }
+  }
+  @media screen and (min-width: 769px) {
+    background-image: var(--hero-gradient),
+      url(../images/hero-bg/hero-bg-desktop.jpg);
+    min-width: 769px;
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    @include retina {
+      background-image: var(--hero-gradient),
+        url(../images/hero-bg/hero-bg-desktop-2x.jpg);
+    }
+  }
+}
+
+.hero__tittle {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white-color);
+  @include font(900, 5.41vw, calc(42 / 26), 0.06em);
+  @include mobile {
+    max-width: 360px;
+    @include font(900, 26px, calc(42 / 26), 0.06em);
+  }
+  @include tablet {
+    max-width: 550px;
+    @include font(900, 3.39vw, calc(42 / 26), 0.06em);
+  }
+  @include desktop {
+    max-width: 696px;
+    @include font(900, 44px, calc(60 / 44), 0.06em);
+  }
+}
+
+.hero__button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 24px;
+  margin: 0 auto;
+}

@@ -1,0 +1,59 @@
+.footer-subs {
+  text-align: center;
+  @include tablet {
+    text-align: center;
+  }
+  @include desktop {
+    margin-left: var(--us-distance);
+  }
+}
+
+.modal-subs {
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  @include font(null, 16px, 1.25, 0.03em);
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  @media screen and(min-width: 481px) and(max-width: 768px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+  }
+  @include desktop {
+    max-width: none;
+    margin-bottom: 0;
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
+.footer-button {
+  position: relative;
+  align-items: center;
+  text-align: left;
+  width: 200px;
+  height: 50px;
+  @include font(700, 16px, 1.88, 0.06em);
+
+  color: var(--white-color);
+  padding: 10px 28px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+.footer-telegram {
+  position: absolute;
+  @extend %transform;
+  right: 28px;
+  margin-left: 10px;
+  fill: var(--white-color);
+}

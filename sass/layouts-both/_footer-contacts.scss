@@ -1,0 +1,65 @@
+.footer {
+  background-color: var(--background-hero-footer);
+  padding: 60px 0;
+}
+.footer-tablet {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    margin-bottom: 0;
+  }
+}
+
+.footer-main {
+  @include tablet {
+    align-items: baseline;
+  }
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer-contacts {
+  @include tablet {
+    margin-right: 165px;
+  }
+  @include desktop {
+    margin-right: 70px;
+  }
+}
+
+.footer .adress,
+.footer .contact {
+  text-decoration: none;
+  @include font(null, 14px, calc(24 / 14), 0.03em);
+  font-style: normal;
+}
+
+.footer .adress {
+  color: var(--white-color);
+}
+
+.footer .contact {
+  color: var(--footer-contacts);
+}
+.footer-item {
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-cont {
+  margin-bottom: 60px;
+}

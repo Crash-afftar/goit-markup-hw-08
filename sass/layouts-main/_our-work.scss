@@ -1,0 +1,41 @@
+.our-work {
+  padding-bottom: var(--us-distance) 15px;
+  @media screen and (max-width: 1199px) {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+}
+.our-work-head {
+  margin-bottom: 50px;
+}
+.our-work-item {
+  width: calc((100% - 60px) / 3);
+  position: relative;
+}
+.our-work-list {
+  display: flex;
+  gap: 30px;
+}
+.our-work-second {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 370px;
+  height: 70px;
+  text-align: center;
+  @include font(null, 14px, calc(16 / 14), 0.03em);
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
