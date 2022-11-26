@@ -6,7 +6,6 @@
 }
 .features__item {
   list-style: none;
-  height: 248px;
   @include calculation(1, 30px);
   @include tablet {
     @include calculation(2, 30px);
@@ -17,14 +16,9 @@
 }
 
 .features__list {
+  gap: 30px;
   display: flex;
   flex-wrap: wrap;
-  @include tablet {
-    gap: 30px;
-  }
-  @include desktop {
-    gap: 30px;
-  }
 }
 
 .features__tittle {

@@ -19,27 +19,33 @@
   @media screen and (min-width: 481px) and (max-width: 768px) {
     background-image: var(--hero-gradient),
       url(../images/hero-bg/hero-bg-tablet.jpg);
-    min-width: 481px;
-    max-width: 768px;
-    height: 400px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+
     @include retina {
       background-image: var(--hero-gradient),
         url(../images/hero-bg/hero-bg-tablet-2x.jpg);
     }
   }
+  @include tablet {
+    min-width: 481px;
+    max-width: 768px;
+    height: 400px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
   @media screen and (min-width: 769px) {
     background-image: var(--hero-gradient),
       url(../images/hero-bg/hero-bg-desktop.jpg);
-    min-width: 769px;
-    max-width: 1600px;
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+
     @include retina {
       background-image: var(--hero-gradient),
         url(../images/hero-bg/hero-bg-desktop-2x.jpg);
+    }
+    @include desktop {
+      min-width: 769px;
+      max-width: 1600px;
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
   }
 }

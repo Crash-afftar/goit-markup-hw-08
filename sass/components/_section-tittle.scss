@@ -1,5 +1,11 @@
 .section-tittle {
   text-align: center;
-  @include font(700, 36px, calc(42 / 36), 0.03em);
+  @include font(700, 28px, calc(33 / 28), 0.03em);
   color: var(--black-color);
+  @include tablet {
+    @include font(700, 28px, calc(33 / 28), 0.03em);
+  }
+  @include desktop {
+    @include font(700, 36px, calc(42 / 36), 0.03em);
+  }
 }

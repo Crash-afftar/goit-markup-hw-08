@@ -3,6 +3,7 @@
   padding: 60px 0;
 }
 .footer-tablet {
+  margin-bottom: 40px;
   @include tablet {
     display: flex;
     align-items: baseline;
@@ -28,10 +29,13 @@
 }
 
 .footer-contacts {
+  margin-bottom: 60px;
   @include tablet {
+    margin-bottom: 0;
     margin-right: 165px;
   }
   @include desktop {
+    margin-bottom: 0;
     margin-right: 70px;
   }
 }
@@ -58,8 +62,4 @@
 }
 .footer-item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-cont {
-  margin-bottom: 60px;
 }
